@@ -6,7 +6,7 @@ LABEL maintainer="Ravi Kishore <rkishore@voziq.com>"
 USER root
 
 RUN apt-get update && 
-apt install --yes git
+apt-get install --yes git
 
 USER $NB_USER
 
