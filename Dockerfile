@@ -1,11 +1,11 @@
 ARG BASE_CONTAINER=jupyter/datascience-notebook:2ce7c06a61a1
 FROM $BASE_CONTAINER
 
-LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
+LABEL maintainer="Ravi Kishore <rkishore@voziq.com>"
 
 USER root
 
-RUN apt update && 
+RUN apt-get update && 
 apt install --yes git
 
 USER $NB_USER
