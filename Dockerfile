@@ -17,6 +17,8 @@ jupyter labextension install @jupyterlab/git && \
 pip install jupyterlab-git \
 && \
 jupyter serverextension enable --py jupyterlab_git --sys-prefix && \
+jupyter lab clean && \
+jupyter lab build && \
 rm -rf /home/$NB_USER/.local && \
 fix-permissions $CONDA_DIR && \
 fix-permissions /home/$NB_USER
